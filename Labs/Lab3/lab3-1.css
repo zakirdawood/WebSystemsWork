@@ -1,0 +1,131 @@
+[class*="col-"] {float:left; padding:15px;}
+
+.row::after {content:""; clear:both; display:table;}
+
+.page-header {
+    color: #1282A2;
+    background-color: #FFFDFC;
+    border-radius: 10px;
+    padding: 0.75%;
+    margin-left: 0.5%;
+    text-align: center;
+    font-size: 130%;
+}
+
+#bsimage {
+    height: 40%;
+    width: 40%;
+    border-radius: 10px;
+}
+
+#bsimage2 {
+    height: 40%;
+    width: 40%;
+    border-radius: 10px;
+    margin-left: 2%;
+}
+
+#img-one {
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+    text-align: center;
+}
+
+#img-txt {
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+    margin-left: -20%;
+    text-align: center;
+    padding-top: 8%;
+    font-size: 120%;
+}
+
+#names {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer-section {
+    bottom: 0;
+    width: 100%;
+    text-align: center; 
+    background-color: #FFFDFC;
+    color: #1282A2;
+    float:left;
+    padding:15px;
+    padding-right: 2.062px;
+    min-width:100%;
+    margin-left: -0.7%;
+    font-size: 110%;
+}
+
+body {
+    color: #FFFDFC;
+    background-color: #08102B;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.05em;
+}
+
+#main-text {
+    font-size: 1.2em;
+}
+
+@media screen and (min-width: 1024px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .col-1 {width: 16.66%;}
+    .col-2 {width: 33.32%;}
+    .col-3 {width: 49.98%;}
+    .col-4 {width: 66.64%;}
+    .col-5 {width: 83.3%;}
+    .col-6 {width: 100%;}
+    .col-7 {width: 100;}
+    .col-8 {width: 100%;}
+    .col-9 {width: 100%;}
+    .col-10 {width: 100%;}
+    .col-11 {width: 100%;}
+    .col-12 {width: 100%;}
+}
+
+@media screen and (max-width: 767px) {
+    .col-1 {width: 100%;}
+    .col-2 {width: 100%;}
+    .col-3 {width: 100%;}
+    .col-4 {width: 100%;}
+    .col-5 {width: 100%;}
+    .col-6 {width: 100%;}
+    .col-7 {width: 100%;}
+    .col-8 {width: 100%;}
+    .col-9 {width: 100%;}
+    .col-10 {width: 100%;}
+    .col-11 {width: 100%;}
+    .col-12 {width: 100%;}
+
+    body {
+        padding-right: 1%;
+    }
+
+    .footer-section {
+        margin-left: -1%;
+        margin-right: 2%;
+        width: 101%;
+    }
+}
