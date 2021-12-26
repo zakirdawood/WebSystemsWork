@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <title>Lab 7 Part I</title>
+  <link rel="stylesheet" type="text/css" href="lab7-1.css"> 
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+</head>
+
+<body style="background-color: #252540; padding-right: 1%;">
+    <h1 style="color: antiquewhite; text-align: center; font-size: 3em;">Edit Mr Potato Head!</h1>
+    <p style="color: antiquewhite; text-align: center;">The screenshot function works better on some devices compared to others. For optimal success, ensure your creation is in the middle-upper portion to get a screenshot of it. You can then save the image onto your device by right-clicking the image and then saving image. Keep items you 
+    do not wish to be a part of your creation at the bottom of the canvas.</p>
+
+    <div id="drawing-space">
+      <div>
+        <img class="item" src="body.jpg" style="width:70%;">
+        <img class="item" src="eyes.png" style="width: 30%;">
+      </div>
+      <div>
+        <img class="item" src="hat.png" style="width: 55%;">
+        <img class="item" src="leftarm.png">
+      </div>
+      <div>
+        <img class="item" src="leftear.png" style="width: 35%;">
+        <img class="item" src="lips.png" style="width: 50%;">
+      </div>
+      <div>
+        <img class="item" src="mouth.png" style="width: 60%;">
+        <img class="item" src="nose.png" style="width: 45%;">
+      </div>
+      <div>
+        <img class="item" src="rightear.png" style="width: 50%;">
+        <img class="item " src="rightarm.png" style="width: 50%;">
+      </div>
+      <div>
+        <img class="item" src="stache.png" style="width: 50%;">
+      </div>
+    </div>
+
+    <br>
+    <div style="text-align: center;">
+      <button style="background-color: lightgreen; border-radius: 5px; text-align: center; align-items: center; font-size: 2em; font-family: monospace;" onclick='screenshot();'>
+        Take Screenshot
+      </button>
+    </div>
+    <br>
+
+    <div id="output">
+      <p style="color: #252540; text-align: center;"><strong>Your Screenshot:</strong></p>
+    </div>
+
+	<div>
+    <script>
+
+    //this jquery function makes elements with the class name "item" draggable
+    $( function() {
+      $( ".item" ).draggable();
+    } );
+
+    //coomnly used html2canvas function that allows user to "take a screenshot" of before appending to element of choice. The user is then able to save that image
+    function screenshot() {
+      window.scrollTo(0,0) //fixes bug where image gets cut off because of scrolling
+      html2canvas(document.getElementById('drawing-space')).then(function(canvas){
+      document.getElementById('output').appendChild(canvas) //adds image to 'output' div which is then savable
+    })
+    };
+  </script>
+</div>
+</body>
+
+</html>
