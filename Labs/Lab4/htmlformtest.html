@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <title>Zakir Dawood - CPS530 - Lab 4 Part II</title>
+    </head>
+
+    <body style="background-color: #E7EFF8; text-align: center; font-family: monospace;">
+        <form action="https://www2.scs.ryerson.ca/~zmdawood/cgi-bin/testingForms.cgi" method="get">
+            <h1>Registration Information</h1>
+    
+            First Name: <br><input tpye="text" name="first">
+            <br><br>
+            Last Name: <br><input type="text" name="last">
+            <br><br>
+            Address: <br><input type="text" name="street">
+            <br><br>
+            City: <br><input type="text" name="city">
+            <br><br>
+            Postal Code (no spaces, ex: Q1P2Z8): <br><input type="text" name="postal">
+            <br><br>
+            <div>
+                <label for="province">Province:</label>
+            </div>
+            <select name="province" id="prov">
+                <option value="Alberta">Alberta</option>
+                <option value="British Columbia">British Columbia</option>
+                <option value="Manitoba">Manitoba</option>
+                <option value="New Brunswick">New Brunswick</option>
+                <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                <option value="Northwest Territories">Northwest Territories</option>
+                <option value="Nova Scotia">Nova Scotia</option>
+                <option value="Nunavut">Nunavut</option>
+                <option value="Ontario">Ontario</option>
+                <option value="PEI">Prince Edward Island</option>
+                <option value="Quebec">Quebec</option>
+                <option value="Saskatchewan">Saskatchewan</option>
+                <option value="Yukon">Yukon</option>
+            </select>
+            <br><br>
+            <div>
+                Gender: 
+                <br>
+                Male<input type="radio" name="gender" value="Male"> <br>
+                Female<input type="radio" name="gender" value="Female"> <br>
+                Non-Binary<input type="radio" name="gender" value="Non-Binary"> <br>
+                Other<input type="radio" name="gender" value="Other"><br>
+                Rather Not Disclose<input type="radio" name="gender" value="Non-Disclose">
+            </div>
+            <br><br>
+            Phone Number (Only digits, ex: 5555555555): <br><input type="text" name="phone">
+            <br><br>
+            Email Address: <br><input type="text" name="email">
+            <br><br>
+            Password: <br><input type="password" name="password">
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
